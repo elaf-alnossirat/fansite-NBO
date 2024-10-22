@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+
+}
+
+header {
+    border: 2px solid red;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+main {
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section > img {
+    width: 20%;
+}
+
+.home_article {
+    display: flex;
+    gap: 10px;
+}
+
