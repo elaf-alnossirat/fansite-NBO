@@ -13,10 +13,7 @@ h1{
 .main p{
   padding-left: 200px;
   padding-right: 20px;
-  text-align:justify;
-  background: url(images/images-pink-floyd/gettyimages-517258723-612x612.jpg);
-  background-size: cover;
-  background-position-y: top;
+  text-align:justify;  
 }
 /* the sidebar menu*/
 .sidenav{
@@ -33,7 +30,7 @@ h1{
 /*the navigation menu links*/
 
 .sidenav a {
-  padding: 6px 6px 6px 6px;
+  padding: 6px 6px 40px 6px;
   text-decoration: none;
   font-size: 25px;
   color: rgb(87, 117, 144);
