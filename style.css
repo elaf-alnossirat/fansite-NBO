@@ -45,9 +45,16 @@ header {
 /* TOP NAVBAR */
 
 nav {
+<<<<<<< HEAD
     position: sticky;
     top: 0;
     z-index: 2;
+=======
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    
+>>>>>>> 5376f9b47aa64166b0888c8908bcbf10e2ea785c
 }
 
 .menu {

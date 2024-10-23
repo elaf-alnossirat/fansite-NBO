@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+}
+h1{
+  padding-left: 200px;
+}
+
+.main{
+
+  
+}
+
+.main p{
+  padding-left: 200px;
+  padding-right: 20px;
+  text-align:justify;  
+}
+/* the sidebar menu*/
+.sidenav{
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  background-color:rgb(144, 190, 109);
+  padding-top: 30px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+/*the navigation menu links*/
+
+.sidenav a {
+  padding: 6px 6px 40px 6px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(87, 117, 144);
+  display: block;
+}
+/*change the color when the mouse is over the navigation links*/
+.sidenav a:hover {
+  color: rgb(243, 114, 44);
+}
