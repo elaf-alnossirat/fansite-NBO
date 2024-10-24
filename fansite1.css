@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
 /* TOP NAVBAR */
 
 nav {
@@ -87,11 +91,11 @@ h1{padding-left: 238px;}
   
 
 
-body{
+/* body{
 background: url(images/images-pink-floyd/gettyimages-1173879044-612x612.jpg);
 background-size: cover;
 
-}
+} */
 
 .main{
 margin: 20px 20px 20px 200px;  
@@ -136,6 +140,7 @@ background-color: whitesmoke;
   font-size: 25px;
   color: rgb(87, 117, 144);
   display: flex;
+
   padding: 11px;
 }
 /*change the color when the mouse is over the navigation links*/
@@ -255,14 +260,14 @@ background-color: whitesmoke;
   background-color: white;
   height: 600px;
   width: 300px;
-
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-evenly;
 
   button{
-    height: 300px;
+    height: 200px;
     width: 300px;
     border: none;
     text-decoration: overline;
@@ -281,7 +286,7 @@ background-color: whitesmoke;
 
 .container22 img{
   height: 500px;
-  width: 290px;
+  width: 300px;
   border-radius: 10px;
   
 }
@@ -294,10 +299,10 @@ background-color: whitesmoke;
 }
 
 .card{
-  height: 690px;
+  height: 600px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
   overflow: hidden;
-
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,6 +315,60 @@ background-color: whitesmoke;
   padding: 6px;
   box-sizing: border-box;
   
+  button{
+    height: 50px;
+    width: 290px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+     a{
+      text-decoration: none;
+      color: black;
+     }
+  }
+
+  button:hover{
+    background: #aad1f7;
+    transform: scale(1 0);
+  }
+}
+
+/*videos grid*/
+
+.videos-container{
+  columns: 15rem 3;
+  gap: 1.4rem;
+  margin-left: 50px;
+  
+}
+
+.photos-container{
+  columns: 15rem 3;
+  gap: 1.4rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 5px 0px rgb(157, 137, 157);
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    transition: all 300ms ease-out;
+
+    &:hover {
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    }
+  }
+}
+
+
+.photos{
+  padding-top: 40px;
+  h3{
+    margin: 40px 0 50px 50px;
+  }
 }
 
 
