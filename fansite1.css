@@ -1,18 +1,36 @@
-*{
-  margin: 0;
-}
-h1{
-  padding-left: 200px;
+
+
+h1{padding-left: 238px;}
+  
+
+
+body{
+background: url(images/images-pink-floyd/gettyimages-1173879044-612x612.jpg);
+background-size: cover;
+
 }
 
 .main{
+margin: 20px 20px 20px 200px;  
+border: black solid;
+background-color: whitesmoke;
 
-  
+}
+
+.photos-top-main {
+  margin: 20px 20px 20px 20px;  
+}
+
+.photos-top-main img{
+  height: 200px;
+  width: 300px;
+  margin-left: 20px;
 }
 
 .main p{
-  padding-left: 200px;
+  padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
   text-align:justify;  
 }
 /* the sidebar menu*/
@@ -20,7 +38,7 @@ h1{
   height: 100%;
   width: 180px;
   position: fixed;
-  background-color:rgb(144, 190, 109);
+  background-color:rgb(144, 190, 109); 
   padding-top: 30px;
   z-index: 1;
   left: 0;
@@ -40,3 +58,177 @@ h1{
 .sidenav a:hover {
   color: rgb(243, 114, 44);
 }
+
+/* page content*/
+.actualité{
+  padding-top: 40px;
+  padding-left: 38px;
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/*actualité*/
+
+.container {
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ /* background-image: url(images/images-pink-floyd/gettyimages-74290244-612x612.jpg); */
+ background-size: cover;
+ margin-top: 30px;
+}
+
+.news-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align:center;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 50vh;
+  width: 300px;
+  padding: 100px 0 100px 0;
+  cursor: pointer;
+  
+  p{
+    font-size: 15px;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+  }
+
+  h5{color: white; }
+    
+ 
+
+  button{
+    background-color:#f9c74f;
+    border: none;
+    text-decoration: overline;
+    text-transform: uppercase;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    width: 200px;
+    transition: 2s;
+  } 
+}
+
+/*news box background*/
+.box1{
+  background-image: url(images/images-pink-floyd/gettyimages-85513372-612x612.jpg);
+  background-size: cover;
+}
+
+.box2{
+  background-image: url(images/images-pink-floyd/gettyimages-84880355-612x612.jpg);
+  background-size: cover;
+}
+
+.box3{
+  background-image: url(images/images-pink-floyd/gettyimages-521332679-612x612.jpg);
+  background-size: cover;
+}
+
+/*evenement*/
+
+.evenements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#577590 ;
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.container2{
+  padding: 50px 0 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+.text-event{
+  text-align: center;
+}
+
+.image-newsletter img{
+  height: 100%;
+  width: 100%;
+}
+
+.newsletter{
+  background-color: white;
+  height: 600px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  button{
+    height: 300px;
+    width: 300px;
+    border: none;
+    text-decoration: overline;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: #f9c74f;
+    transition: 0.5s;
+  }
+ 
+}
+  
+/*events cards*/
+
+.container22 img{
+  height: 500px;
+  width: 290px;
+  border-radius: 10px;
+  
+}
+
+.container22{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.card{
+  height: 690px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro{
+  height: 200px;
+  width:300px;
+  padding: 6px;
+  box-sizing: border-box;
+  
+}
+
+
+
+
+
