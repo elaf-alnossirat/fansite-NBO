@@ -100,7 +100,10 @@ ul li:hover .dropMenu {
   display: flex;
 }
 
-h1{padding-left: 238px;}
+h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
   
 main{
 margin: 20px 20px 20px 200px;  
