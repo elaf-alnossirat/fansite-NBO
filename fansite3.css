@@ -81,7 +81,7 @@ nav {
   
   li a {
     display: block; 
-    color: #222222;
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
     font-size: 1rem;
@@ -383,6 +383,10 @@ iframe {
 }
 
 /* REALISATIONS / ALBUMS SECTION */
+
+.realisations {
+  padding: 0 20px;
+}
 
 .album-carousel {
   padding: 50px 0;
