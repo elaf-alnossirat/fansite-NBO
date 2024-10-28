@@ -1,0 +1,309 @@
+/* CSS du FANSITE N°2 : fansite fictif de la chanteuse Lene Marlin */
+
+/* Importations de polices et backgrounds */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'EthnoFont';
+    src: url('./fonts/ethnocentric_rg.otf'); /* IE9 Compat Modes */
+}
+
+/* Définition de variables */
+
+:root {
+    --darky: #191920;
+    --dark-bg: #222222;
+    --bleu-clair-1: rgb( 222, 230, 243);
+    --bleu-clair-2: rgb( 218, 236, 240);
+    --rose: rgb( 241, 129, 171)
+}
+
+/* Configurations par défault */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* En tête commun au trois sites */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid  #aad1f7;
+    border-bottom: 1.5px solid rgb(64, 207, 233);
+    box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+
+
+    li {
+        padding: 1rem;
+        text-align: center;
+
+        a {
+            font-size: 1.25rem;
+            padding: 1rem;
+        }
+    }
+
+    .logo-nbo {
+        cursor: pointer;
+        margin-right: auto;
+        padding-left: 24px;
+        text-align: center;
+        font-family: EthnoFont;
+        font-size: 4rem;
+        background: linear-gradient(to right, #4285F4, #9B72CB, #D96570);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+li a {
+    display: block; 
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+ul li a:hover {
+    color:#9500ff;
+}
+
+ul li:hover .dropMenu {
+    display: block;
+    background-color:#7400aa;
+    color: #fff;
+    padding: 0;
+
+& li:hover {
+        background-color: #310148;
+    }
+}
+
+.dropMenu {
+    display: none;
+    position: absolute;
+}
+
+/* Division regroupant main et aside */
+
+.main-container {
+    display: flex;
+}
+
+/* Barre de navigation interne au fan site de Lene Marlin */
+
+/* Barre de navigation */
+
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    background-color:rgba(241, 129, 171, 0.7); 
+    padding-top: 30px;
+    z-index: 1;
+    /* left: 0;
+    top: 0; */
+}
+  
+/* Hyperliens de la barre de navigation */
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: lightslategrey;
+    display: flex;
+    padding: 11px;   
+}
+
+/* Permet de surligner la section pointé par la souris lors de la navigation dans la barre */
+
+.sidenav a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Paramètres généraux du main */
+
+main {
+    margin: 35px 35px 35px 215px;  
+    border: lightslategrey solid;
+    padding: 10px;
+    background: linear-gradient(to right, var(--bleu-clair-1), var(--bleu-clair-2));
+    
+}
+
+/* Titre et image principale */
+
+h1 {
+    font-size: 75px;
+    font-family: Harrington;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.image_principale {
+    display: flex; 
+    width: 90%;
+    justify-self: center;
+        
+}   
+
+/* Titres des sections */
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Garamond;
+    margin: 20px 0;
+}
+
+/* Section actualités */
+
+.news {
+    display: flex;
+    height: 200px;
+    margin: 15px 0;
+    border-bottom: grey solid;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 10px 20px;
+
+        h3 {
+            text-align: center;
+            font-family: Broadway;
+        }
+
+        p {
+            text-align: justify;
+            font-family: Cascadia code;
+        }
+
+        a {
+            text-align: center;
+        }
+    }
+}
+
+.news_img2 {
+    display: flex;
+    order: 1;
+}
+
+.news_img4 {
+    display: flex;
+    order: 1;
+}
+
+/* Section biographie */
+
+.bio {
+    margin: 15px 10px 15px 5px;
+
+    h3 {
+        margin-bottom: 5px;
+        font-family: Arial;
+    }
+    p {
+        text-align: justify;
+        font-family: Verdana;
+    }
+}
+
+/* Section réalisations */
+
+/* Titres des sous-parties */
+
+.rea_titre {
+    margin: 20px 0px;
+    text-align: center;
+    font-family: Arial;
+}
+
+/* Sous-section discographie */
+
+.disco {
+    display: flex;
+    justify-content: space-around;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        border: gray solid;
+        padding: 5px 50px 5px 60px;
+    
+        ol li {
+            padding-left: 10px;
+        }
+
+    }
+    
+}
+
+.disco1 {
+    background-image: url(./images/images-lene-marlin/disco-1.png);
+    background-size: cover;
+}
+
+.disco2 {
+    background-image: url(./images/images-lene-marlin/disco-2.png);
+    background-size: cover;
+}
+
+.disco3 {
+    background-image: url(./images/images-lene-marlin/disco-3.png);
+    background-size: cover;
+}
+
+.disco4 {
+    background-image: url(./images/images-lene-marlin/disco-4.png);
+    background-size: cover;
+}
+
+/* Pied de page */
+
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    padding: 1rem;
+
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+        background: linear-gradient(to right, #4285F4, #9B72CB, #D96570);
+        background-clip: text;
+        color: transparent;
+    }
+    
+}
