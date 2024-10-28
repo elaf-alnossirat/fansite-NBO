@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sunflower&display=swap');
+
 
 *{
   margin: 0;
@@ -5,8 +7,15 @@
   box-sizing: border-box;
 }
 
+
 html{
   scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 /* TOP NAVBAR */
 
@@ -57,7 +66,7 @@ ul {
 
 li a {
   display: block; 
-  color: #fff;
+  color:black;
   text-decoration: none;
   text-align: center;
   font-size: 1rem;
@@ -97,7 +106,7 @@ background-size: cover;
 
 } */
 
-.main{
+main{
 margin: 20px 20px 20px 200px;  
 border: black solid;
 background-color: whitesmoke;
@@ -114,7 +123,7 @@ background-color: whitesmoke;
   margin-left: 20px;
 }
 
-.main p{
+main p{
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -400,6 +409,11 @@ background-color: whitesmoke;
       cursor: pointer;
       transition: all 300ms ease-out;
 
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
       &:hover {
           transition: all 200ms ease-in;
           transform: scale(1.1);
@@ -488,6 +502,18 @@ background-color: whitesmoke;
   justify-content: space-between;
   margin-left: 40px;
   margin-bottom: 10px;
+
+  button{
+    padding: 10px;
+    background-color: #0ead69;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+      transition: all 200ms ease-in;
+          transform: scale(1.1);
+    }
+  }
  }
 
  .field{
