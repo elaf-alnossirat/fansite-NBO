@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'EthnoFont';
+    src: url('./fonts/ethnocentric_rg.otf'); /* IE9 Compat Modes */
+}
+
+:root {
+    --darky: #191920;
+    --dark-bg: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--dark-bg); 
+    background-size: cover;
+    background-image: linear-gradient(180deg,rgba(16,16,20,0) 0,#101014 100%),radial-gradient(circle,rgba(16,16,20,0) 0,#101014 100%),url(https://media.fab.com/covers/channels/9fb12c6c-d9f9-4c86-9e4e-c039adb05341/e4b053c8-7dd9-4b2f-8c1a-0cd441bee655.jpg);
+}
+
+
+
+/*  HEADER */
+
+header {
+    padding: 50px;
+    
+    h1 {
+        text-align: center;
+        font-family: EthnoFont;
+        font-size: 4rem;
+        background: linear-gradient(to right, #3357f9, #7affd3, #ff131a);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+
+/* TOP NAVBAR */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid  #aad1f7;
+    border-bottom: 1.5px solid rgb(64, 207, 233);
+    box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    
+
+    li {
+        padding: 1rem;
+        text-align: center;
+
+        a {
+            font-size: 1.25rem;
+            padding: 1rem;
+        }
+    }
+
+    .logo-nbo {
+        cursor: pointer;
+        margin-right: auto;
+        padding-left: 24px;
+        text-align: center;
+        font-family: EthnoFont;
+        font-size: 4rem;
+        background: linear-gradient(to right, #4285F4, #9B72CB, #D96570);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+ul {
+    list-style: none;
+}
+
+li a {
+    display: block; 
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+ul li a:hover {
+    color:#9500ff;
+}
+
+ul li:hover .dropMenu {
+    display: block;
+    background-color:#7400aa;
+    color: #fff;
+    padding: 0;
+
+    & li:hover {
+        background-color: #310148;
+    }
+}
+
+.dropMenu {
+    display: none;
+    position: absolute;
+}
+
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+
+
+/* CELEB CARDS HOME PAGE */
+
+.dev-container {
+
+    img { 
+        width: 400px;
+        height: 600px;
+        cursor: pointer;
+        border-radius: 4px 30px 4px 0;
+        box-shadow: 0px 0px 15px 0px rgb(251, 0, 255);
+        z-index: 1;
+        position: relative;
+        
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 40px 20px;
+        margin-top: -5px;
+        box-shadow: 0 10px 25px 0 rgb(79, 1, 223);
+        background: linear-gradient(to right, #4285F4, #9B72CB, #D96570);
+        background-clip: text;
+        color: transparent;
+        cursor: pointer;
+    }
+}
+
+/* CELEB MAIN PROFILE NAME BOX */
+.skewed {
+    /* width: 403px; */
+    background: #2c3e50;
+    z-index: 0;
+    transform: skewY(3deg);
+    transform-origin: top right;
+}
+
+/*  FLIPPING CARD */
+.card {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    transition: all 1s linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+}
+
+.front {
+    /* background-color: #3357f9; */
+    z-index: 3;
+}
+
+.back {
+    background-color: rgb(0, 0, 0);
+    
+    border-radius: 4px 30px 4px 0;
+    box-shadow: 0px 0px 15px 0px rgb(251, 0, 255);
+    z-index: 2;
+    transform: rotateY(180deg);
+
+    p a {
+        text-decoration: none;
+        color: rgb(251, 0, 255);
+
+        &:hover {
+            color: #9500ff;
+        }
+    }
+}
+
+
+.container-flip:hover .card {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.container-flip {
+    perspective: 1200px;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    padding: 1rem;
+
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+        background: linear-gradient(to right, #4285F4, #9B72CB, #D96570);
+        background-clip: text;
+        color: transparent;
+    }
+    
+}
+

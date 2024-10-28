@@ -2,8 +2,15 @@
 
 @font-face {
     font-family: 'EthnoFont';
-    src: url('./fonts/ethnocentric_rg.otf'); /* IE9 Compat Modes */
+    src: url('./fonts/ethnocentric_rg.otf'); 
 }
+
+@font-face {
+  font-family: 'DigiFont';
+  src: url('./fonts/DS-DIGI.TTF');
+}
+
+
 
 html {
     scroll-behavior: smooth;
@@ -110,9 +117,9 @@ nav {
 
   /* MAIN CONTAINER */
 
-  .main-container{
+  /* .main-container{
     display: flex;
-  }
+  } */
 
 
 
@@ -123,7 +130,8 @@ nav {
     height: 100%;
     width: 180px;
     position: fixed;
-    background-color:rgb(142, 255, 55); 
+    background-color: var(--dark-bg);
+    background-image: linear-gradient(180deg,rgba(16,16,20,0) 0,#101014 100%),radial-gradient(circle,rgba(16,16,20,0) 0,#101014 100%),url(https://media.fab.com/covers/channels/9fb12c6c-d9f9-4c86-9e4e-c039adb05341/e4b053c8-7dd9-4b2f-8c1a-0cd441bee655.jpg);
     padding-top: 30px;
     z-index: 1;
   }
@@ -132,14 +140,15 @@ nav {
   .sidenav a {
     text-decoration: none;
     font-size: 25px;
-    color: rgb(26, 26, 26);
+    font-family: DigiFont;
+    color: #fff;
     display: flex;
     padding: 11px;
   }
 
   /*change the color when the mouse is over the navigation links*/
   .sidenav a:hover {
-    color: rgb(243, 114, 44);
+    color: var(--neon-blue);
   }
 
 
@@ -147,8 +156,7 @@ nav {
 /* MAIN SECTION */
   
   main{
-  margin: 50px 20px 20px 200px;  
-  /* border: black solid; */
+  margin: 0px 20px 20px 200px;  
   border-radius: 15px;
   background-color: var(--dark-bg); 
   background-image: linear-gradient(180deg,rgba(16,16,20,0) 0,#101014 100%),radial-gradient(circle,rgba(16,16,20,0) 0,#101014 100%),url(https://media.fab.com/covers/channels/9fb12c6c-d9f9-4c86-9e4e-c039adb05341/e4b053c8-7dd9-4b2f-8c1a-0cd441bee655.jpg);
@@ -168,8 +176,8 @@ header {
     width: auto;
     overflow: hidden;
     mask-image: -webkit-gradient(linear, center top, center bottom, 
-			    color-stop(0.50,  var(--dark-bg)),
-			    color-stop(1.00,  rgba(0,0,0,0)));
+			          color-stop(0.50,  var(--dark-bg)),
+			          color-stop(1.00,  rgba(0,0,0,0)));
 
     
     h1 {
@@ -203,6 +211,11 @@ header {
   }
 }
 
+hr {
+  width: 70%;
+  margin: 20px auto;
+}
+
 
 /* INTRO SECTION */
 .artist-bio {
@@ -219,14 +232,11 @@ h3 {
 
 
 /* ACTU SECTION */
-.actu {
-
-  iframe {
-    margin: 0 auto;
-    display: flex;
-    border-radius: 10px;
-  }
-  
+.actu iframe {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 10px;
 }
 
 
@@ -258,7 +268,7 @@ h3 {
     color: #ffffff;
 
     &:visited {
-      color: #57a78d;
+      color: #74ff4d;
     }
   }
 }
@@ -297,7 +307,8 @@ iframe {
 
 /* Carousel */
 #carousel {
-  height: 350px;
+  height: 650px;
+  
 }
 
 #carousel input {
@@ -323,7 +334,7 @@ iframe {
 
 .card-label iframe {
   width: 100%;
-  height: 100%;
+  height: 600px;
   object-fit: cover;
   border-radius: 10px;
   pointer-events: none;
@@ -371,6 +382,131 @@ iframe {
   box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.47);
 }
 
+/* REALISATIONS / ALBUMS SECTION */
+
+.album-carousel {
+  padding: 50px 0;
+  max-width: 1650px;
+  margin: 3em auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.47);
+}
+
+.album-carousel-items {
+  display: flex;
+  gap: 20px;
+  animation: carouselInfinite 60s linear infinite;
+}
+
+.album-carousel-item {
+  a {
+    display: block;
+    }
+
+  img {
+    width: 300px;
+    object-fit: cover;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+ 
+}
+
+
+@keyframes carouselInfinite {
+ 
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.wiggle:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+/* AUTRES CELEB SECTION */
+.fansite-links-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.2rem;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 30px;
+    a {
+      text-decoration: none;
+      color: rgb(251, 0, 255);
+
+      &:hover {
+          color: #9500ff;
+      }
+    }
+  }
+}
+
+
+/* RESEAUX SECTION */
+.reseaux {
+  padding: 30px;
+}
+
+.fa-icons {
+  width: 3rem;
+  height: 3rem;
+  vertical-align: -.125em;
+  transition: all 300ms ease-out;
+
+    &:hover {
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+
+        &.insta path {
+          fill: #fd511d;
+        }
+
+        &.twitter path {
+          fill: #1DA1F2;
+        }
+
+        &.tiktok path {
+          fill: #00f2ea;
+        }
+    }
+}
+
+.reseaux-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
 
 /* FOOTER */

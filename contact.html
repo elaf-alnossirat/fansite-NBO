@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulaire De Contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+
+        <!-- TOP NAVBAR -->
+        <nav >
+            <ul class="menu">
+                <p class="logo-nbo neonText">NBO</p>
+                <li>
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="dropBtn">Les Célébrités</a>
+                    <ul class="dropMenu">
+    
+                        <li class="dropped">
+                            <a href="fansite1.html">
+                            Pink Floyd
+                            </a>
+                        </li>
+    
+                        <li class="dropped">
+                            <a href="fansite2.html">
+                                Lene Martin
+                            </a>
+                        </li>
+                        
+                        <li class="dropped">
+                            <a href="fansite3.html">
+                                AESPA
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="aboutus.html">
+                        About Us
+                    </a>
+                </li> 
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li> 
+            </ul>
+        </nav>
+
+
+        <!-- MAIN CELEB CARD PROFILES CONTAINER-->
+        <main>
+
+          <!-- Contact -->
+     <section class="contact" id="section8">
+        <h1>FORMULAIRE DE CONTACT</h1>
+
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+
+            <label for="fname">Prénom</label>
+            <input type="text" id="fname" name="firstname" placeholder="Entrez votre prénom">
+        
+            <label for="lname">Nom</label>
+            <input type="text" id="lname" name="lastname" placeholder="Entrez votre nom">
+        
+            <label for="country">Pays</label>
+            <select id="country" name="country">
+              <option value="france">France</option>
+              <option value="belgique">Belgique</option>
+              <option value="suisse">Suisse</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Écrivez votre message ici " style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+     </section>
+        </main>
+        
+        <!-- FOOTER -->
+        <footer>
+            <p>Copyright Reserved - NBO - 2024 La Plateforme</p>
+        </footer>
+    </body>
+</html>
