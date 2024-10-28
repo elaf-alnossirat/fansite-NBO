@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sunflower&display=swap');
 
+@font-face {
+  font-family: 'EthnoFont';
+  src: url('./fonts/ethnocentric_rg.otf'); /* IE9 Compat Modes */
+}
 
 *{
   margin: 0;
@@ -98,14 +102,6 @@ ul li:hover .dropMenu {
 
 h1{padding-left: 238px;}
   
-
-
-/* body{
-background: url(images/images-pink-floyd/gettyimages-1173879044-612x612.jpg);
-background-size: cover;
-
-} */
-
 main{
 margin: 20px 20px 20px 200px;  
 border: black solid;
@@ -365,9 +361,7 @@ main p{
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 5px 0px rgb(157, 137, 157);
-    cursor: pointer;
-    z-index: 3;
-    position: relative;
+    cursor: pointer;        
     transition: all 300ms ease-out;
 
     &:hover {
