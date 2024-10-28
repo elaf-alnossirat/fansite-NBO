@@ -406,21 +406,40 @@ footer {
     
 }
 
-/* Adaptation aux petit écrans */
 
-@media only screen and (max-width: 1200px) {
 
-    .sidenav {
-        display: none;
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .menu li {
+      padding: 0;
+  
+      a {
+        font-size: 1rem;
+        padding: 5px;
+      }
     }
-
-    /* .news div {
-        display: flex;
-        flex-wrap: wrap;
-    } */
-
-    /* .nav {
-        display: flex;
-        justify-content: center;
-    } */
-}
+  
+    .menu .logo-nbo {
+      font-size: 1.5rem;
+    }
+  
+    .sidenav {
+      display: none;
+    }
+  
+    main {
+      margin: 0;
+      padding: 0 20px;
+    }
+  
+    .realisations, h3 {
+      padding: 0;
+    }
+  
+    .fansite-links-container p {
+      padding: 10px;
+      text-align: center;
+    }
+  }
