@@ -291,6 +291,104 @@ h2 {
     background-size: cover;
 }
 
+/* Sous-section collaborations musicales */
+
+.collaboration {
+    text-align: justify;
+    font-family: Verdana;
+    margin: 0px 10px;
+}
+
+/* Sous-section récompenses */
+
+.récompense {
+    margin-left: 10px;
+
+    li{
+        margin-bottom: 5px;
+        font-family: Arial;
+    }
+}
+
+/* Section évenement */
+
+.évenement {
+    margin: 10px;
+
+    h3 {
+        font-size: 25px;
+        font-family: Forte;
+    }
+
+    p {
+        font-size: 20px;
+        font-family: Consolas;
+    }
+}
+
+/* Section photos & vidéos */
+
+.pv_titre {
+    margin: 20px 0px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    img {
+        height: 300px;
+        margin-bottom: 20px;
+        
+    }
+}
+
+.audio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    iframe {
+        margin: 10px;
+    }
+}
+
+/* Section autres fansites */
+
+.fansite {
+    display: flex;
+    flex-direction: column;
+
+    a { 
+        font-family: Verdana;
+        margin: 0px 0px 10px 20px;
+        text-decoration: none;
+    }
+}
+
+/* Section réseau sociaux */
+
+.rs {
+    display: flex;
+    justify-content: space-evenly;
+
+    a img {
+        height: 100px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
 /* Pied de page */
 
 footer {
@@ -306,4 +404,23 @@ footer {
         color: transparent;
     }
     
+}
+
+/* Adaptation aux petit écrans */
+
+@media only screen and (max-width: 1200px) {
+
+    .sidenav {
+        display: none;
+    }
+
+    /* .news div {
+        display: flex;
+        flex-wrap: wrap;
+    } */
+
+    /* .nav {
+        display: flex;
+        justify-content: center;
+    } */
 }
